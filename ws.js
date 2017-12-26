@@ -1,4 +1,3 @@
-require('strict-mode')(function () {
 var websocketServer = require("ws").Server;
 
 var wss = new websocketServer({port:3001});
@@ -18,8 +17,8 @@ wss.on("connection",function(ws){
 		}
 
 	});
-  let date = new Date();
-  let message = {
+  var date = new Date();
+  var message = {
       id : date.getTime(),
       type : 'sent',
       content : "Welcome to cyber chat....",
@@ -33,4 +32,3 @@ wss.on("connection",function(ws){
 
   ws.send(JSON.stringify(message));
 });
-})
