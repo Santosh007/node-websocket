@@ -1,3 +1,4 @@
+require('strict-mode')(function () {
 var websocketServer = require("ws").Server;
 
 var wss = new websocketServer({port:3001});
@@ -32,3 +33,4 @@ wss.on("connection",function(ws){
 
   ws.send(JSON.stringify(message));
 });
+})

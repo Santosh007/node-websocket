@@ -12,6 +12,7 @@
   "author": "Santosh",
   "license": "MIT",
   "dependencies": {
+    "strict-mode": "^1.1.2",
     "ws": "^3.3.2"
   }
 }
