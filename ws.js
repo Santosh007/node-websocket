@@ -1,6 +1,6 @@
 var websocketServer = require("ws").Server;
 
-var wss = new websocketServer({port:3001});
+var wss = new websocketServer({port:8080});
 
 wss.on("connection",function(ws){
 
